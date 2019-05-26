@@ -5,6 +5,7 @@ using namespace std;
 
 int main()
 {
+	// ввод строки и подстроки с клавиатуры
 	string str, substr;
 	cout << "Entry string: ";
 	getline(cin, str); // str - строка
@@ -22,6 +23,7 @@ int main()
 			else if (j == substr.size() - 1)
 				found = i;
 		}
+		// если нашли подстроку - выходим из цикла
 		if (found != -1)
 			break;
 	}
